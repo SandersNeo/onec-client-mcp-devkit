@@ -14,8 +14,9 @@ Use this skill to produce and assess 1C (BSL) code that follows the project rule
 1. Read `references/codex-rules-1c.md` to apply SRP, OCP, DRY, YAGNI, and related principles.
 2. Read `references/steel-morgan-coding-standards.md` for detailed BSL coding standards.
 3. Follow `docs/code-style.md` when the repository provides it.
-4. Keep changes minimal and scoped to the task.
-5. When reviewing BSL code, explicitly apply this skill.
+4. For async external components, read `references/async-external-components.md`.
+5. Keep changes minimal and scoped to the task.
+6. When reviewing BSL code, explicitly apply this skill.
 
 ## Workflow
 
