@@ -13,7 +13,7 @@ Each task must pass through the following stages, in order:
 - If any agent proposes changes outside the current task scope: STOP and correct scope.
 
 ## Code Style
-- When editing BSL modules, follow `docs/yaxunit-code-style.md`.
+- When editing BSL modules, follow `docs/code-style.md`.
 
 ## Branching & Commits
 - Large tasks must be done in their own branch: `feat/<issue-i>-<short-description>`.
