@@ -28,5 +28,6 @@
   <commonTemplates>CommonTemplate.Мсп_webTransport</commonTemplates>
   <commonModules>CommonModule.Мсп_MCPКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментыКлиент</commonModules>
+  <commonModules>CommonModule.Мсп_ЛогированиеКлиент</commonModules>
   <commonModules>CommonModule.Мсп_СерверКлиент</commonModules>
 </mdclass:Configuration>
