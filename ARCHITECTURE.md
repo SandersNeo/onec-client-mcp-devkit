@@ -16,11 +16,11 @@ flowchart LR
 ```mermaid
 flowchart TB
   subgraph ClientSide[1C Client Extension]
-    API[мсп_MCP API]
-    Registry[мсп_MCP_Реестр]
-    Protocol[мсп_MCP_Протокол]
-    Transport[мсп_СерверКлиент]
-    Log[мсп_MCP_Лог]
+    API[Мсп_MCP API]
+    Registry[Мсп_MCP_Реестр]
+    Protocol[Мсп_MCP_Протокол]
+    Transport[Мсп_СерверКлиент]
+    Log[Мсп_MCP_Лог]
   end
 
   API --> Registry
@@ -36,9 +36,9 @@ flowchart TB
 sequenceDiagram
   participant C as MCP Client
   participant T as WebTransport AddIn
-  participant S as мсп_СерверКлиент
-  participant P as мсп_MCP_Протокол
-  participant R as мсп_MCP_Реестр
+  participant S as Мсп_СерверКлиент
+  participant P as Мсп_MCP_Протокол
+  participant R as Мсп_MCP_Реестр
   participant H as Handler (ОписаниеОповещения)
 
   C->>T: JSON-RPC request (tools/call)
@@ -59,7 +59,7 @@ sequenceDiagram
 sequenceDiagram
   participant C as MCP Client
   participant T as AddIn.WebTransport.mcp
-  participant S as мсп_СерверКлиент
+  participant S as Мсп_СерверКлиент
 
   C->>T: Open SSE channel
   T->>S: ВнешнееСобытие SSE_OPEN(sessionId)

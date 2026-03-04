@@ -25,7 +25,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <commonTemplates>CommonTemplate.мсп_webTransport</commonTemplates>
+  <commonTemplates>CommonTemplate.Мсп_webTransport</commonTemplates>
   <commonModules>CommonModule.Мсп_MCPКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_СерверКлиент</commonModules>

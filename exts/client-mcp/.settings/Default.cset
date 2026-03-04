@@ -1,6 +1,11 @@
 {
   "version": 1,
   "settings": {
+    "use-non-recommended-method": {
+      "properties": {
+        "nonRecommendedMethods": "ПолучитьФорму,Найти,GetForm,Message,Сообщить,Find"
+      }
+    },
     "extension-method-prefix": {
       "enabled": false
     }
