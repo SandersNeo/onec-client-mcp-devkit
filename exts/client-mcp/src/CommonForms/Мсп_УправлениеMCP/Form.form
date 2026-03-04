@@ -35,7 +35,6 @@
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
         </extInfo>
       </items>
@@ -80,6 +79,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>Логировать</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ЛогироватьПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>ЛогироватьРасширеннаяПодсказка</name>
           <id>29</id>
@@ -95,10 +98,6 @@
           <id>130</id>
           <autoFill>true</autoFill>
         </contextMenu>
-        <handlers>
-          <event>OnChange</event>
-          <name>ЛогироватьПриИзменении</name>
-        </handlers>
         <type>CheckBoxField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
@@ -117,6 +116,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>УровеньЛога</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>УровеньЛогаПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>УровеньЛогаРасширеннаяПодсказка</name>
           <id>161</id>
@@ -132,10 +135,6 @@
           <id>162</id>
           <autoFill>true</autoFill>
         </contextMenu>
-        <handlers>
-          <event>OnChange</event>
-          <name>УровеньЛогаПриИзменении</name>
-        </handlers>
         <type>InputField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
@@ -145,6 +144,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <listChoiceMode>true</listChoiceMode>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -161,6 +161,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>ФайлЛога</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ФайлЛогаПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>ФайлЛогаРасширеннаяПодсказка</name>
           <id>26</id>
@@ -176,10 +180,6 @@
           <id>27</id>
           <autoFill>true</autoFill>
         </contextMenu>
-        <handlers>
-          <event>OnChange</event>
-          <name>ФайлЛогаПриИзменении</name>
-        </handlers>
         <type>InputField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
@@ -1277,6 +1277,10 @@
     <event>OnOpen</event>
     <name>ПриОткрытии</name>
   </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
@@ -1295,8 +1299,10 @@
     </title>
     <id>10</id>
     <valueType>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
     </valueType>
     <view>
       <common>true</common>
