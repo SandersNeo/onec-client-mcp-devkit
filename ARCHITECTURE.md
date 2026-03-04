@@ -19,7 +19,7 @@ flowchart TB
     API[Мсп_MCP API]
     Registry[Мсп_MCP_Реестр]
     Protocol[Мсп_MCP_Протокол]
-    Transport[Мсп_СерверКлиент]
+    Transport[Мсп_ТранспортКлиент]
     Log[Мсп_MCP_Лог]
   end
 
@@ -36,7 +36,7 @@ flowchart TB
 sequenceDiagram
   participant C as MCP Client
   participant T as WebTransport AddIn
-  participant S as Мсп_СерверКлиент
+  participant S as Мсп_ТранспортКлиент
   participant P as Мсп_MCP_Протокол
   participant R as Мсп_MCP_Реестр
   participant H as Handler (ОписаниеОповещения)
@@ -59,7 +59,7 @@ sequenceDiagram
 sequenceDiagram
   participant C as MCP Client
   participant T as AddIn.WebTransport.mcp
-  participant S as Мсп_СерверКлиент
+  participant S as Мсп_ТранспортКлиент
 
   C->>T: Open SSE channel
   T->>S: ВнешнееСобытие SSE_OPEN(sessionId)
