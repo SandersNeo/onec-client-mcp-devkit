@@ -25,12 +25,14 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <subsystems>Subsystem.Мсп_MCP</subsystems>
   <commonTemplates>CommonTemplate.Мсп_webTransport</commonTemplates>
-  <commonForms>CommonForm.Мсп_УправлениеMCP</commonForms>
   <commonModules>CommonModule.Мсп_MCPКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ЛогированиеКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ПротоколMCPКлиент</commonModules>
   <commonModules>CommonModule.Мсп_РеестрMCPКлиент</commonModules>
   <commonModules>CommonModule.Мсп_СерверКлиент</commonModules>
+  <commonCommands>CommonCommand.Мсп_УправлениеMCP</commonCommands>
+  <commonForms>CommonForm.Мсп_УправлениеMCP</commonForms>
 </mdclass:Configuration>
