@@ -28,6 +28,7 @@
   <subsystems>Subsystem.Мсп_MCP</subsystems>
   <commonTemplates>CommonTemplate.Мсп_webTransport</commonTemplates>
   <commonModules>CommonModule.Мсп_MCPКлиент</commonModules>
+  <commonModules>CommonModule.Мсп_ИнструментИнфоИБКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ЛогированиеКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ПротоколMCPКлиент</commonModules>
