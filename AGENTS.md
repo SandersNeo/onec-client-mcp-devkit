@@ -12,6 +12,9 @@ Each task must pass through the following stages, in order:
 - Never do wide edits across unrelated files.
 - If any agent proposes changes outside the current task scope: STOP and correct scope.
 
+## Code Style
+- When editing BSL modules, follow `docs/yaxunit-code-style.md`.
+
 ## Branching & Commits
 - Large tasks must be done in their own branch: `feat/<issue-i>-<short-description>`.
 - Work on an existing task can continue in the same branch (even in a new chat). Small microtasks should stay on the current branch.
