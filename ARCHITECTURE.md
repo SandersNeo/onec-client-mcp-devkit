@@ -17,10 +17,10 @@ flowchart LR
 flowchart TB
   subgraph ClientSide[1C Client Extension]
     API[Мсп_MCP API]
-    Registry[Мсп_MCP_Реестр]
-    Protocol[Мсп_MCP_Протокол]
+    Registry[Мсп_Реестр]
+    Protocol[Мсп_Протокол]
     Transport[Мсп_ТранспортКлиент]
-    Log[Мсп_MCP_Лог]
+    Log[Мсп_Лог]
   end
 
   API --> Registry
@@ -37,12 +37,12 @@ sequenceDiagram
   participant C as MCP Client
   participant T as WebTransport AddIn
   participant S as Мсп_ТранспортКлиент
-  participant P as Мсп_MCP_Протокол
-  participant R as Мсп_MCP_Реестр
+  participant P as Мсп_Протокол
+  participant R as Мсп_Реестр
   participant H as Handler (ОписаниеОповещения)
 
   C->>T: JSON-RPC request (tools/call)
-  T->>S: ВнешнееСобытие MCP_MESSAGE
+  T->>S: ВнешнееСобытие MESSAGE
   S->>P: Parse/Dispatch
   P->>R: Find tool handler
   R-->>P: ОписаниеОповещения
@@ -63,10 +63,10 @@ sequenceDiagram
 
   C->>T: Open SSE channel
   T->>S: ВнешнееСобытие SSE_OPEN(sessionId)
-  Note over S: store session in MCP_SSE_Сессии
+  Note over S: store session in SSE_Сессии
 
   C->>T: JSON-RPC message
-  T->>S: ВнешнееСобытие MCP_MESSAGE(payload)
+  T->>S: ВнешнееСобытие MESSAGE(payload)
 
   S->>T: Server Notification (logMessage)
   T->>C: SSE event logMessage

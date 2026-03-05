@@ -6,8 +6,6 @@
     <value>Провайдеры MCP</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>false</includeInCommandInterface>
-  <content>CommonModule.Мсп_ИнструментДолгаяОперацияКлиент</content>
   <content>CommonModule.Мсп_ИнструментИнфоИБКлиент</content>
   <content>CommonModule.Мсп_ИнструментСложениеКлиент</content>
 </mdclass:Subsystem>
