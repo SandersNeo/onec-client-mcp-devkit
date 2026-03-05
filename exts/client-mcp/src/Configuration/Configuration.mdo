@@ -35,6 +35,7 @@
   <commonModules>CommonModule.Мсп_ЛогированиеКлиент</commonModules>
   <commonModules>CommonModule.Мсп_МетаданныеВызовСервера</commonModules>
   <commonModules>CommonModule.Мсп_МетаданныеСервер</commonModules>
+  <commonModules>CommonModule.Мсп_ПаузаВызовСервера</commonModules>
   <commonModules>CommonModule.Мсп_ПровайдерыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ПротоколКлиент</commonModules>
   <commonModules>CommonModule.Мсп_РеестрКлиент</commonModules>
