@@ -42,18 +42,18 @@ sequenceDiagram
   participant H as Handler (ОписаниеОповещения)
 
   C->>T: JSON-RPC request (tools/call)
-  T->>S: ВнешнееСобытие MESSAGE
+  T->>S: ВнешнееСобытие MCP_TOOL_CALL
   S->>P: Parse/Dispatch
   P->>R: Find tool handler
   R-->>P: ОписаниеОповещения
   P->>H: ВыполнитьОповещение(Контекст)
   H-->>P: Result (content/error)
   P->>S: JSON-RPC response
-  S->>T: Send response
+  S->>T: ОтправитьMCPОтвет
   T->>C: Response
 ```
 
-## Transport (SSE + WebTransport.mcp)
+## Transport (WebTransport MCP Events)
 
 ```mermaid
 sequenceDiagram
@@ -61,13 +61,8 @@ sequenceDiagram
   participant T as AddIn.WebTransport.mcp
   participant S as Мсп_ТранспортКлиент
 
-  C->>T: Open SSE channel
-  T->>S: ВнешнееСобытие SSE_OPEN(sessionId)
-  Note over S: store session in SSE_Сессии
-
-  C->>T: JSON-RPC message
-  T->>S: ВнешнееСобытие MESSAGE(payload)
-
-  S->>T: Server Notification (logMessage)
-  T->>C: SSE event logMessage
+  C->>T: MCP request (tools/resources/prompts)
+  T->>S: ВнешнееСобытие MCP_TOOL_CALL/MCP_RESOURCE_READ/MCP_PROMPT_GET
+  S->>T: ОтправитьMCPОтвет
+  T->>C: Response
 ```
