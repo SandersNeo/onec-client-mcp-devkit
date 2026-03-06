@@ -24,6 +24,8 @@ Use this skill to produce and assess 1C (BSL) code that follows the project rule
 - Apply the design principles from `references/codex-rules-1c.md`.
 - Keep procedures small, focused, and named by action.
 - Separate UI, business logic, and data access responsibilities.
+- Enforce strict responsibility boundaries between modules (e.g., tools parse parameters and build responses; service modules contain domain logic only).
+- Use constructor functions for all returned `Структура` values (no inline `Новый Структура(...)` outside constructors).
 - Avoid deep call chains; add accessors on the owning object instead.
 - Prefer extension points over long type-based branching.
 - Verify public method comments, parameter types, and return types.
