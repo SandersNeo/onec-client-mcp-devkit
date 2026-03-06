@@ -110,6 +110,7 @@
 
 ## Resources
 - `ui://active/window` — активное окно.
+- `ui://windows` — список окон.
 - `ui://active/form` — активная форма.
 - `ui://forms/{formId}` — конкретная форма.
 - `ui://elements/{elementId}` — элемент управления.
