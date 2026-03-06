@@ -8,4 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <content>CommonModule.Мсп_ИнструментИнфоИБКлиент</content>
   <content>CommonModule.Мсп_ИнструментСложениеКлиент</content>
+  <content>CommonModule.Мсп_ИнструментТестКлиент</content>
 </mdclass:Subsystem>
