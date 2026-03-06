@@ -19,7 +19,7 @@
 
 ### 2. Ресурс чтения активных окон
 - Статус: `todo`
-- Рабочий план: `docs/mcp-test-client/tasks/02-active-windows-resource.md` (TBD)
+- Рабочий план: `docs/mcp-test-client/tasks/02-active-windows-resource.md`
 - Содержание:
   - Ресурс `ui://active/window`.
   - Формат ответа и глубина снимка.
