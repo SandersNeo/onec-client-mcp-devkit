@@ -15,4 +15,11 @@ Thumbs.db
 # Env files
 .env
 .env.*
+
+# IDE agent configs (keep only secrets out)
+.kiro/
+.kilocode/
 .codex/
+!.kilocode/skills
+!.codex/skills
+!.kiro/skills
