@@ -1,0 +1,1 @@
+{"mcpServers":{"v8-runner":{"command":"java","args":["-jar","/home/alko/develop/open-source/ai/mcp/mcp-onec-test-runner/build/libs/mcp-yaxunit-runner-feature-syntax-check-5ccf321-DIRTY.jar"],"env":{"LOGGING_LEVEL_ROOT":"INFO","SPRING_CONFIG_IMPORT":"file:application-yaxunit.yml"},"disabled":false,"alwaysAllow":[]}}}

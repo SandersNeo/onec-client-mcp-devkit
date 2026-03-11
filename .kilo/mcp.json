@@ -1,0 +1,26 @@
+{
+    "mcpServers": {
+        "v8-help": {
+            "command": "java",
+            "args": [
+                "-jar",
+                "/home/alko/develop/open-source/ai/msp/mcp-bsl-platform-context/build/libs/mcp-bsl-context-feature-hbk-parser-ca67d27-DIRTY.jar",
+                "--platform-path",
+                "/opt/1cv8/x86_64/8.5.1.1150"
+            ],
+            "disabled": true,
+            "alwaysAllow": []
+        },
+        "edt": {
+            "type": "sse",
+            "url": "http://localhost:8765/mcp",
+            "disabled": true,
+            "alwaysAllow": []
+        },
+        "bsl-navigator": {
+            "url": "http://127.0.0.1:8001",
+            "disabled": true,
+            "alwaysAllow": []
+        }
+    }
+}
