@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c39129f8-1fa7-465b-b2bb-75cc55f6f820">
-  <name>Конфигурация</name>
+  <name>configuration</name>
   <synonym>
     <key>ru</key>
-    <value>Конфигурация</value>
+    <value>Configuration</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="5cb8940b-4702-4cdf-8e26-bca88e152aa3"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="1b01d533-74d3-4254-8b43-d1397372c46c"/>

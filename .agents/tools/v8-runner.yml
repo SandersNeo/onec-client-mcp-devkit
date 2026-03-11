@@ -1,7 +1,6 @@
 app:
   id: client-mcp-devkit
   format: EDT
-  base-path: /home/alko/develop/open-source/ai/mcp/onec-client-mcp-devkit
   source-set:
     - path: fixtures/configuration
       name: configuration
@@ -15,15 +14,7 @@ app:
       name: tests
       type: EXTENSION
       purpose: [TESTS, YAXUNIT]
-  connection:
-    connection-string: File='/home/alko/develop/onec_file_db/client-mcp';
-  platform-version: 8.5.1.1150
   tools:
-    builder: DESIGNER
     enterprise:
       additional-launch-keys:
         - "/TESTMANAGER"
-    edt-cli:
-      auto-start: true
-      version: 2025.2.3
-      working-directory: /home/alko/develop/EDT_WS/client-mcp-ai
