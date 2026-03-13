@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3e4f5a6-b7c8-9012-defa-234567890123">
+  <name>ОМ_СериализацияКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>MCP Сериализация клиент тесты</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

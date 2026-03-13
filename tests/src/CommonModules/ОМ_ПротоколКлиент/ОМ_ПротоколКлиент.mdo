@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7c8d9e0-f1a2-3456-bcde-678901234567">
+  <name>ОМ_ПротоколКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>MCP Протокол клиент тесты</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>
