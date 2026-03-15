@@ -27,4 +27,16 @@
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
   </forms>
+  <commands uuid="b2c3d4e5-0020-0020-0020-000000000020">
+    <name>ОткрытьОсновнуюФорму</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть основную форму</value>
+    </synonym>
+    <use>ForAnyObject</use>
+    <commandParameterType>WithoutParameter</commandParameterType>
+    <parameterUseMode>DoNotUse</parameterUseMode>
+    <form>DataProcessor.МодальныеДиалоги.Form.ОсновнаяФорма</form>
+    <group>NavigationPanelOrdinary</group>
+  </commands>
 </mdclass:DataProcessor>

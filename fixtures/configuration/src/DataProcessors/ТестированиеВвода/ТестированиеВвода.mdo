@@ -44,4 +44,40 @@
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
   </forms>
+  <commands uuid="a1b2c3d4-0010-0010-0010-000000000010">
+    <name>ОткрытьПростыеПоляВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Простые поля ввода</value>
+    </synonym>
+    <use>ForAnyObject</use>
+    <commandParameterType>WithoutParameter</commandParameterType>
+    <parameterUseMode>DoNotUse</parameterUseMode>
+    <form>DataProcessor.ТестированиеВвода.Form.ПростыеПоляВвода</form>
+    <group>NavigationPanelOrdinary</group>
+  </commands>
+  <commands uuid="a1b2c3d4-0011-0011-0011-000000000011">
+    <name>ОткрытьУправляемыеЭлементы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управляемые элементы</value>
+    </synonym>
+    <use>ForAnyObject</use>
+    <commandParameterType>WithoutParameter</commandParameterType>
+    <parameterUseMode>DoNotUse</parameterUseMode>
+    <form>DataProcessor.ТестированиеВвода.Form.УправляемыеЭлементы</form>
+    <group>NavigationPanelOrdinary</group>
+  </commands>
+  <commands uuid="a1b2c3d4-0012-0012-0012-000000000012">
+    <name>ОткрытьГруппыИВкладки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы и вкладки</value>
+    </synonym>
+    <use>ForAnyObject</use>
+    <commandParameterType>WithoutParameter</commandParameterType>
+    <parameterUseMode>DoNotUse</parameterUseMode>
+    <form>DataProcessor.ТестированиеВвода.Form.ГруппыИВкладки</form>
+    <group>NavigationPanelOrdinary</group>
+  </commands>
 </mdclass:DataProcessor>
