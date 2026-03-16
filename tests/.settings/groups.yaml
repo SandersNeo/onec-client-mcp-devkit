@@ -4,6 +4,7 @@ groups:
   - CommonModule.ОМ_ОкнаКлиент
   - CommonModule.ОМ_УправлениеТестКлиентом
   - CommonModule.ОМ_ФормыКлиент
+  - CommonModule.ОМ_ТестированиеВводаФормы
   - CommonModule.ПомощникТестированияКлиента
   description: null
   name: test-client
