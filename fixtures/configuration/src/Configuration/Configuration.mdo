@@ -37,6 +37,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <dataProcessors>DataProcessor.ВнешнийИнструментКалькулятор</dataProcessors>
   <dataProcessors>DataProcessor.МодальныеДиалоги</dataProcessors>
   <dataProcessors>DataProcessor.ТестированиеВвода</dataProcessors>
 </mdclass:Configuration>
