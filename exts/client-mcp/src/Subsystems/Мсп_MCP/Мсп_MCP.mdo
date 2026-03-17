@@ -10,7 +10,6 @@
   <content>CommonCommand.Мсп_УправлениеMCP</content>
   <content>CommonForm.Мсп_УправлениеMCP</content>
   <content>CommonModule.Мсп_ИнструментИнфоИБКлиент</content>
-  <content>CommonModule.Мсп_ИнструментыКлиент</content>
   <content>CommonModule.Мсп_Коллекции</content>
   <content>CommonModule.Мсп_ЛогированиеКлиент</content>
   <content>CommonModule.Мсп_ПротоколКлиент</content>

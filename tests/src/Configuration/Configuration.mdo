@@ -80,7 +80,6 @@
   <commonModules>CommonModule.МокитоПроверки</commonModules>
   <commonModules>CommonModule.МокитоСлужебный</commonModules>
   <commonModules>CommonModule.ОМ_URIКлиент</commonModules>
-  <commonModules>CommonModule.ОМ_ИнструментыКлиент</commonModules>
   <commonModules>CommonModule.ОМ_Коллекции</commonModules>
   <commonModules>CommonModule.ОМ_ЛогированиеКлиент</commonModules>
   <commonModules>CommonModule.ОМ_ОкнаКлиент</commonModules>
@@ -88,6 +87,7 @@
   <commonModules>CommonModule.ОМ_ПротоколКлиент</commonModules>
   <commonModules>CommonModule.ОМ_РеестрКлиент</commonModules>
   <commonModules>CommonModule.ОМ_РесурсыКлиент</commonModules>
+  <commonModules>CommonModule.ОМ_Сервер</commonModules>
   <commonModules>CommonModule.ОМ_СериализацияКлиент</commonModules>
   <commonModules>CommonModule.ОМ_СостояниеКлиент</commonModules>
   <commonModules>CommonModule.ОМ_ТестированиеВводаФормы</commonModules>

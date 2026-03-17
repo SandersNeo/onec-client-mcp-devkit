@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5a6b7c8-d9e0-1234-fabc-456789012345">
-  <name>ОМ_ИнструментыКлиент</name>
+  <name>ОМ_Сервер</name>
   <synonym>
     <key>ru</key>
-    <value>MCP Инструменты клиент тесты</value>
+    <value>Тесты МСП_Сервер</value>
   </synonym>
   <clientManagedApplication>true</clientManagedApplication>
   <clientOrdinaryApplication>true</clientOrdinaryApplication>

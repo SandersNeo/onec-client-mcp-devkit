@@ -31,20 +31,22 @@
   <commonModules>CommonModule.Мсп_URIКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментИнфоИБКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментТестКлиент</commonModules>
-  <commonModules>CommonModule.Мсп_ИнструментыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_Коллекции</commonModules>
   <commonModules>CommonModule.Мсп_ЛогированиеКлиент</commonModules>
   <commonModules>CommonModule.Мсп_МетаданныеВызовСервера</commonModules>
   <commonModules>CommonModule.Мсп_МетаданныеСервер</commonModules>
   <commonModules>CommonModule.Мсп_ОкнаКлиент</commonModules>
+  <commonModules>CommonModule.Мсп_Ошибки</commonModules>
   <commonModules>CommonModule.Мсп_ПаузаВызовСервера</commonModules>
   <commonModules>CommonModule.Мсп_ПровайдерыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ПротоколКлиент</commonModules>
   <commonModules>CommonModule.Мсп_РеестрКлиент</commonModules>
   <commonModules>CommonModule.Мсп_РесурсыКлиент</commonModules>
   <commonModules>CommonModule.Мсп_РесурсыТестКлиент</commonModules>
+  <commonModules>CommonModule.Мсп_Сервер</commonModules>
   <commonModules>CommonModule.Мсп_СериализацияКлиент</commonModules>
   <commonModules>CommonModule.Мсп_СостояниеКлиент</commonModules>
+  <commonModules>CommonModule.Мсп_СхемаПараметров</commonModules>
   <commonModules>CommonModule.Мсп_ТранспортКлиент</commonModules>
   <commonModules>CommonModule.Мсп_УправлениеТестКлиентом</commonModules>
   <commonModules>CommonModule.Мсп_ФормыКлиент</commonModules>

@@ -2,22 +2,22 @@ groups:
 - children:
   - CommonModule.ОМ_URIКлиент
   - CommonModule.ОМ_ОкнаКлиент
+  - CommonModule.ОМ_ТестированиеВводаФормы
   - CommonModule.ОМ_УправлениеТестКлиентом
   - CommonModule.ОМ_ФормыКлиент
-  - CommonModule.ОМ_ТестированиеВводаФормы
   - CommonModule.ПомощникТестированияКлиента
   description: null
   name: test-client
   order: 0
   path: CommonModule
 - children:
-  - CommonModule.ОМ_ИнструментыКлиент
   - CommonModule.ОМ_Коллекции
   - CommonModule.ОМ_ЛогированиеКлиент
   - CommonModule.ОМ_Провайдеры
   - CommonModule.ОМ_ПротоколКлиент
   - CommonModule.ОМ_РеестрКлиент
   - CommonModule.ОМ_РесурсыКлиент
+  - CommonModule.ОМ_Сервер
   - CommonModule.ОМ_СериализацияКлиент
   - CommonModule.ОМ_СостояниеКлиент
   description: null

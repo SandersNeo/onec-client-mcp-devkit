@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="707d168c-da45-46ad-993f-bcffb94b67a3">
+  <name>Мсп_СхемаПараметров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Схема параметров</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

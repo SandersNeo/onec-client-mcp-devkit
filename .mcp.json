@@ -10,6 +10,21 @@
       },
       "disabled": true,
       "alwaysAllow": []
+    },
+    "bsl-context": {
+      "command": "java",
+      "args": [
+        "-jar",
+        ".agents/tools/mcp-bsl-context.jar",
+        "--platform-path",
+        "/opt/1cv8/x86_64/8.5.1.1150"
+      ],
+      "env": {
+        "LOG_FILE": "bsl-context.log",
+        "LOGGING_LEVEL_ROOT": "INFO"
+      },
+      "disabled": true,
+      "alwaysAllow": []
     }
   }
 }
