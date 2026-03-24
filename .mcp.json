@@ -1,8 +1,7 @@
 {
   "mcpServers": {
     "v8-runner": {
-      "command": "java",
-      "args": ["-jar", ".agents/tools/mcp-yaxunit-runner.jar"],
+      "command": "/home/alko/develop/open-source/ai/mcp/mcp-onec-test-runner/build/native/nativeCompile/mcp-yaxunit-runner",
       "env": {
         "LOG_FILE": "v8-runner.log",
         "LOGGING_LEVEL_ROOT": "INFO",

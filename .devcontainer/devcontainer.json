@@ -1,0 +1,30 @@
+{
+  "name": "onec-client-mcp-devkit",
+  "image": "local.devcontainers/onec-client:8.3.27.1859",
+  "initializeCommand": "sh -lc 'command -v xhost >/dev/null && xhost +SI:localuser:root || true'",
+  "remoteUser": "root",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=/home/alko/.codex/auth.json,target=${containerWorkspaceFolder}/.codex-mount/auth.json,type=bind",
+    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
+    "source=${localEnv:XAUTHORITY},target=/root/.Xauthority,type=bind"
+  ],
+  "remoteEnv": {
+    "CODEX_HOME": "${containerWorkspaceFolder}/.codex-mount",
+    "DISPLAY": "${localEnv:DISPLAY}",
+    "XAUTHORITY": "/root/.Xauthority",
+    "QT_X11_NO_MITSHM": "1"
+  },
+  "postCreateCommand": "npm install -g --no-fund --no-audit @openai/codex",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.eol": "\n"
+      }
+    }
+  }
+}

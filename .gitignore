@@ -21,8 +21,6 @@ Thumbs.db
 .kiro/
 .kilocode/
 .codex/
-!.kilocode/skills
-!.codex/skills
-!.kiro/skills
 .agents/tools/*
 !.agents/tools/v8-runner.yml
+.codex-mount
