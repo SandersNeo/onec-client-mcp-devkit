@@ -19,35 +19,30 @@ Map common user phrasing to one normalized app kind before calling tools.
   - `конфигуратор`
   - `designer`
   - `configurator`
-- `test-client`
-  - `тест-клиент`
-  - `тест клиент`
-  - `test client`
-  - `test-client`
 
-## `utilityType` candidates
+## Supported `utilityType` aliases
 
-The exact alias accepted by `mcp__v8_runner__launch_app` may differ by environment.
-Try the candidates in order and stop on the first successful launch.
+These aliases are explicitly supported by `mcp__v8_runner__launch_app`.
 
 - `thin-client`
-  - `thinClient`
   - `thin-client`
+  - `тонкий клиент`
+  - `тонкий`
+  - `thin client`
   - `thin`
+  - `tc`
 - `thick-client`
-  - `thickClient`
   - `thick-client`
+  - `толстый клиент`
+  - `толстый`
+  - `thick client`
   - `thick`
 - `designer`
   - `designer`
+  - `конфигуратор`
   - `configurator`
-- `test-client`
-  - `testClient`
-  - `test-client`
-  - `test`
 
 ## Notes
 
 - Prefer `mcp__v8_runner__launch_app` over ad hoc shell commands.
-- If all candidate aliases fail, return the exact error and do not claim a launch succeeded.
-- For test-client scenarios specific to this repository, use `/workspace/docs/mcp-test-client/tasks/01-client-control.md` as the next source of truth.
+- If all supported aliases fail, return the exact error and do not claim a launch succeeded.
