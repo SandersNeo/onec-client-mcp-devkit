@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:Table">
     <name>Таблица</name>
-    <id>201</id>
+    <id>5</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -11,13 +11,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Таблица</segments>
     </dataPath>
+    <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
       <name>ТаблицаСтрока</name>
-      <id>202</id>
-      <title>
-        <key>ru</key>
-        <value>Строка</value>
-      </title>
+      <id>18</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -26,8 +23,23 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Таблица.Строка</segments>
       </dataPath>
+      <extendedTooltip>
+        <name>ТаблицаСтрокаРасширеннаяПодсказка</name>
+        <id>20</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаСтрокаКонтекстноеМеню</name>
+        <id>19</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
       <type>InputField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -36,17 +48,13 @@
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
         <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
-        <textSize>Normal</textSize>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>ТаблицаЧисло</name>
-      <id>203</id>
-      <title>
-        <key>ru</key>
-        <value>Число</value>
-      </title>
+      <id>21</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -55,8 +63,23 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Таблица.Число</segments>
       </dataPath>
+      <extendedTooltip>
+        <name>ТаблицаЧислоРасширеннаяПодсказка</name>
+        <id>23</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаЧислоКонтекстноеМеню</name>
+        <id>22</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
       <type>InputField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -65,17 +88,13 @@
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
         <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
-        <textSize>Normal</textSize>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>ТаблицаДата</name>
-      <id>204</id>
-      <title>
-        <key>ru</key>
-        <value>Дата</value>
-      </title>
+      <id>24</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -84,8 +103,23 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Таблица.Дата</segments>
       </dataPath>
+      <extendedTooltip>
+        <name>ТаблицаДатаРасширеннаяПодсказка</name>
+        <id>26</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаДатаКонтекстноеМеню</name>
+        <id>25</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
       <type>InputField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -94,17 +128,13 @@
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
         <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
-        <textSize>Normal</textSize>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>ТаблицаАктивен</name>
-      <id>205</id>
-      <title>
-        <key>ru</key>
-        <value>Активен</value>
-      </title>
+      <id>27</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -113,8 +143,23 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Таблица.Активен</segments>
       </dataPath>
+      <extendedTooltip>
+        <name>ТаблицаАктивенРасширеннаяПодсказка</name>
+        <id>29</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаАктивенКонтекстноеМеню</name>
+        <id>28</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
       <type>CheckBoxField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -122,12 +167,84 @@
     </items>
     <autoCommandBar>
       <name>ТаблицаКоманднаяПанель</name>
-      <id>208</id>
+      <id>6</id>
+      <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <searchStringAddition>
+      <name>ТаблицаСтрокаПоиска</name>
+      <id>9</id>
+      <extendedTooltip>
+        <name>ТаблицаСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>11</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаСтрокаПоискаКонтекстноеМеню</name>
+        <id>10</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>Таблица</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <name>ТаблицаСостояниеПросмотра</name>
+      <id>15</id>
+      <extendedTooltip>
+        <name>ТаблицаСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>17</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаСостояниеПросмотраКонтекстноеМеню</name>
+        <id>16</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>Таблица</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <name>ТаблицаУправлениеПоиском</name>
+      <id>12</id>
+      <extendedTooltip>
+        <name>ТаблицаУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>14</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТаблицаУправлениеПоискомКонтекстноеМеню</name>
+        <id>13</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>Таблица</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
     <extendedTooltip>
       <name>ТаблицаРасширеннаяПодсказка</name>
-      <id>206</id>
+      <id>8</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -137,16 +254,15 @@
     </extendedTooltip>
     <contextMenu>
       <name>ТаблицаКонтекстноеМеню</name>
-      <id>207</id>
+      <id>7</id>
       <autoFill>true</autoFill>
     </contextMenu>
-    <titleLocation>None</titleLocation>
     <changeRowSet>true</changeRowSet>
-    <changeRowOrder>false</changeRowOrder>
+    <changeRowOrder>true</changeRowOrder>
     <autoMaxWidth>true</autoMaxWidth>
     <autoMaxHeight>true</autoMaxHeight>
     <autoMaxRowsCount>true</autoMaxRowsCount>
-    <selectionMode>SingleRow</selectionMode>
+    <selectionMode>MultiRow</selectionMode>
     <header>true</header>
     <headerHeight>1</headerHeight>
     <footerHeight>1</footerHeight>
@@ -159,27 +275,32 @@
     <initialListView>Auto</initialListView>
     <horizontalStretch>true</horizontalStretch>
     <verticalStretch>true</verticalStretch>
-    <enableStartDrag>false</enableStartDrag>
-    <enableDrag>false</enableDrag>
+    <enableStartDrag>true</enableStartDrag>
+    <enableDrag>true</enableDrag>
     <fileDragMode>AsFileRef</fileDragMode>
+    <rowFilter xsi:type="core:UndefinedValue"/>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
-    <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
     <items xsi:type="form:Button">
-      <name>КнопкаЗаполнить</name>
-      <id>210</id>
-      <title>
-        <key>ru</key>
-        <value>Заполнить</value>
-      </title>
+      <name>ФормаЗаполнитьТаблицу</name>
+      <id>1</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаполнитьТаблицуРасширеннаяПодсказка</name>
+        <id>2</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
       <commandName>Form.Command.ЗаполнитьТаблицу</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
@@ -188,17 +309,23 @@
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
-      <name>КнопкаОчистить</name>
-      <id>211</id>
-      <title>
-        <key>ru</key>
-        <value>Очистить</value>
-      </title>
+      <name>ФормаОчиститьТаблицу</name>
+      <id>3</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
+      <extendedTooltip>
+        <name>ФормаОчиститьТаблицуРасширеннаяПодсказка</name>
+        <id>4</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
       <commandName>Form.Command.ОчиститьТаблицу</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
@@ -206,36 +333,25 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
   </autoCommandBar>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
-  <group>Auto</group>
+  <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
   <enabled>true</enabled>
-  <showTitle>auto</showTitle>
+  <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
-  <attributes>
-    <name>Объект</name>
-    <id>1</id>
-    <valueType>
-      <types>DataProcessorObject.ТестированиеВвода</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <main>true</main>
-  </attributes>
   <attributes>
     <name>Таблица</name>
     <title>
       <key>ru</key>
       <value>Таблица</value>
     </title>
-    <id>2</id>
+    <id>1</id>
     <valueType>
       <types>ValueTable</types>
     </valueType>
@@ -247,7 +363,11 @@
     </edit>
     <columns>
       <name>Строка</name>
-      <id>3</id>
+      <title>
+        <key>ru</key>
+        <value>Строка</value>
+      </title>
+      <id>2</id>
       <valueType>
         <types>String</types>
         <stringQualifiers/>
@@ -261,12 +381,15 @@
     </columns>
     <columns>
       <name>Число</name>
-      <id>4</id>
+      <title>
+        <key>ru</key>
+        <value>Число</value>
+      </title>
+      <id>3</id>
       <valueType>
         <types>Number</types>
         <numberQualifiers>
           <precision>10</precision>
-          <scale>2</scale>
         </numberQualifiers>
       </valueType>
       <view>
@@ -278,10 +401,16 @@
     </columns>
     <columns>
       <name>Дата</name>
-      <id>5</id>
+      <title>
+        <key>ru</key>
+        <value>Дата</value>
+      </title>
+      <id>4</id>
       <valueType>
         <types>Date</types>
-        <dateQualifiers/>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -292,7 +421,11 @@
     </columns>
     <columns>
       <name>Активен</name>
-      <id>6</id>
+      <title>
+        <key>ru</key>
+        <value>Активен</value>
+      </title>
+      <id>5</id>
       <valueType>
         <types>Boolean</types>
       </valueType>
@@ -304,17 +437,13 @@
       </edit>
     </columns>
   </attributes>
-  <commandInterface>
-    <navigationPanel/>
-    <commandBar/>
-  </commandInterface>
   <formCommands>
     <name>ЗаполнитьТаблицу</name>
     <title>
       <key>ru</key>
       <value>Заполнить</value>
     </title>
-    <id>220</id>
+    <id>1</id>
     <use>
       <common>true</common>
     </use>
@@ -323,7 +452,7 @@
         <name>ЗаполнитьТаблицу</name>
       </handler>
     </action>
-    <currentRowUse>DontUse</currentRowUse>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
     <name>ОчиститьТаблицу</name>
@@ -331,7 +460,7 @@
       <key>ru</key>
       <value>Очистить</value>
     </title>
-    <id>221</id>
+    <id>2</id>
     <use>
       <common>true</common>
     </use>
@@ -340,7 +469,10 @@
         <name>ОчиститьТаблицу</name>
       </handler>
     </action>
-    <currentRowUse>DontUse</currentRowUse>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
 </form:Form>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4c4aa15-61f3-43f2-96de-4cc1d8e26fce">
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b281f60-f1eb-4b13-9cb7-cc679b789632">
   <producedTypes>
-    <objectType typeId="3eaa5d52-bfc9-4b52-960b-8fcfbd97abdd" valueTypeId="7caeb0d8-2daf-4c24-80dc-b9f6999f403d"/>
-    <managerType typeId="f0098e98-ffea-4ca7-8c11-f851788ea6b8" valueTypeId="f452e2d7-366e-4ba1-a121-5f2b51f18963"/>
+    <objectType typeId="e26b7aee-c062-4eff-a420-3cde4941866b" valueTypeId="bf884bf3-264d-4929-92e6-f128b2b5707d"/>
+    <managerType typeId="aac5d139-7d2e-4443-b7fe-58a232aa7dbc" valueTypeId="82daef9d-3a1b-4c8c-9f10-f05569a17b8b"/>
   </producedTypes>
   <name>ВнешнийИнструментКалькулятор</name>
   <synonym>
@@ -11,7 +11,7 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ВнешнийИнструментКалькулятор.Form.Форма</defaultForm>
-  <forms uuid="9ecfe138-84fd-492d-9fb8-36c99d01c4b8">
+  <forms uuid="0755cc26-5c5f-4658-ae4b-05743adbdcf8">
     <name>Форма</name>
     <synonym>
       <key>ru</key>

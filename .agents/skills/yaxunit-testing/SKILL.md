@@ -6,7 +6,7 @@ description: Run, scope, and interpret YAxUnit tests for 1C projects. Use when s
 # YAxUnit Testing
 
 ## Overview
-Use this skill to locate relevant YAxUnit test modules, understand test coverage, and run or scope tests using YAxUnit tooling.
+Use this skill to locate relevant YAxUnit test modules, understand test coverage, and run or scope tests using the `v8_runner` tools first.
 
 ## Workflow
 1. Identify relevant test modules.
@@ -18,12 +18,15 @@ Use this skill to locate relevant YAxUnit test modules, understand test coverage
 - This procedure enumerates tests via `ЮТТесты.ДобавитьТест("ИмяМетода")`.
 - The listed methods are the test entry points to focus on.
 
-3. Run tests (choose an available path).
-- CLI launch: run 1C with `/C RunUnitTests=<path to config>` (see the run guide in references).
+3. Run tests.
+- Primary path: use `mcp__v8_runner__run_module_tests` for a specific module or `mcp__v8_runner__run_all_tests` for the full suite.
+- If the infobase may be stale after source changes, use `mcp__v8_runner__build_project` before rerunning tests.
+- Use manual CLI launch with `/C RunUnitTests=<path to config>` only if the `v8_runner` tools are unavailable.
 - Ensure the YAxUnit extension has **safe mode** and **dangerous action protection** disabled as required by YAxUnit docs.
 
 4. Report results.
 - If tests are not run, state why and list the relevant modules and methods identified.
+- If `v8_runner` fails before producing a JUnit report, inspect the log paths returned by the tool and report the infrastructure cause separately from test failures.
 
 ## Resources
 - `references/yaxunit-tests.md` for paths, naming conventions, and run documentation pointers.

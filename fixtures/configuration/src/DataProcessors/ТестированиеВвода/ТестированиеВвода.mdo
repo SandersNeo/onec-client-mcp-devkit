@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68effc94-9028-4432-8682-f402619ad74b">
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="133cd63e-c831-4665-bbd3-e40876846359">
   <producedTypes>
-    <objectType typeId="e22e9c09-0825-4e19-81a9-2a44ed1d837b" valueTypeId="3c4a9050-6853-4d50-930e-b29aaa93f6f7"/>
-    <managerType typeId="8dd9a184-411d-4574-87c4-e74126fb1a04" valueTypeId="a08ef3a8-d0b7-4684-b5f3-e2eee4efb1ee"/>
+    <objectType typeId="932cab91-0602-41fa-afd0-655a52d0aac1" valueTypeId="657a4556-2a23-4dc6-8728-dc26372d4369"/>
+    <managerType typeId="9b4e8428-a533-4a00-b858-48b0948f800b" valueTypeId="5556126a-105f-49f8-8965-dcd4704ec43d"/>
   </producedTypes>
   <name>ТестированиеВвода</name>
   <synonym>
@@ -11,7 +11,7 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ТестированиеВвода.Form.ПростыеПоляВвода</defaultForm>
-  <forms uuid="518e2a11-ca57-44e4-addd-9f54fd12933c">
+  <forms uuid="f9fb09fb-26c6-4b6d-bd90-c4f8ddc5d873">
     <name>ПростыеПоляВвода</name>
     <synonym>
       <key>ru</key>
@@ -20,31 +20,34 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="a1b2c3d4-0001-0001-0001-000000000001">
+  <forms uuid="d941e6df-17ab-4506-baab-745cebb51125">
     <name>УправляемыеЭлементы</name>
     <synonym>
       <key>ru</key>
       <value>Управляемые элементы</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="a1b2c3d4-0002-0002-0002-000000000002">
+  <forms uuid="5580b050-8115-4e1c-be61-e4a004e4e692">
     <name>ТаблицаЗначений</name>
     <synonym>
       <key>ru</key>
       <value>Таблица значений</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="a1b2c3d4-0003-0003-0003-000000000003">
+  <forms uuid="b2b1839f-3f25-4c6d-ac66-a782ec5d81f9">
     <name>ГруппыИВкладки</name>
     <synonym>
       <key>ru</key>
       <value>Группы и вкладки</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <commands uuid="a1b2c3d4-0010-0010-0010-000000000010">
+  <commands uuid="65b3558d-1cae-497a-8ade-66adb262b5a4">
     <name>ОткрытьПростыеПоляВвода</name>
     <synonym>
       <key>ru</key>
@@ -56,7 +59,7 @@
     <form>DataProcessor.ТестированиеВвода.Form.ПростыеПоляВвода</form>
     <group>NavigationPanelOrdinary</group>
   </commands>
-  <commands uuid="a1b2c3d4-0011-0011-0011-000000000011">
+  <commands uuid="a31ade0f-9740-4aed-9a77-2e9eb02ec568">
     <name>ОткрытьУправляемыеЭлементы</name>
     <synonym>
       <key>ru</key>
@@ -68,7 +71,7 @@
     <form>DataProcessor.ТестированиеВвода.Form.УправляемыеЭлементы</form>
     <group>NavigationPanelOrdinary</group>
   </commands>
-  <commands uuid="a1b2c3d4-0012-0012-0012-000000000012">
+  <commands uuid="b2381d32-0dc0-48e2-849e-3b3d763e9c65">
     <name>ОткрытьГруппыИВкладки</name>
     <synonym>
       <key>ru</key>

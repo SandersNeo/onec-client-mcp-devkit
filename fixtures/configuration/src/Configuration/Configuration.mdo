@@ -28,7 +28,7 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
-  <compatibilityMode>8.5.1</compatibilityMode>
+  <compatibilityMode>8.3.27</compatibilityMode>
   <languages uuid="16ed7f69-ca53-4231-9e9a-991272353de9">
     <name>Русский</name>
     <synonym>
@@ -37,6 +37,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <dataProcessors>DataProcessor.ВнешнийИнструментАсинхроннаяОперация</dataProcessors>
   <dataProcessors>DataProcessor.ВнешнийИнструментКалькулятор</dataProcessors>
   <dataProcessors>DataProcessor.МодальныеДиалоги</dataProcessors>
   <dataProcessors>DataProcessor.ТестированиеВвода</dataProcessors>
