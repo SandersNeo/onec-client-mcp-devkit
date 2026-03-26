@@ -1,4 +1,4 @@
 interface:
   display_name: "Launch 1C Apps"
-  short_description: "Launch 1C apps and map thin/thick/designer/test aliases"
-  default_prompt: "Use $launch-1c-apps to map the requested app alias and start the correct 1C application in the local environment."
+  short_description: "Launch 1C thin, thick, or designer apps"
+  default_prompt: "Use $launch-1c-apps to map the requested launch alias and start the correct 1C application."
