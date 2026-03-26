@@ -2,11 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
     <name>ВводимоеЗначение</name>
-    <id>11</id>
-    <title>
-      <key>ru</key>
-      <value>Значение</value>
-    </title>
+    <id>1</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -17,7 +13,7 @@
     </dataPath>
     <extendedTooltip>
       <name>ВводимоеЗначениеРасширеннаяПодсказка</name>
-      <id>12</id>
+      <id>3</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -27,7 +23,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ВводимоеЗначениеКонтекстноеМеню</name>
-      <id>13</id>
+      <id>2</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
@@ -40,18 +36,16 @@
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
       <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
-      <textSize>Normal</textSize>
     </extInfo>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
-    <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
     <items xsi:type="form:Button">
-      <name>КнопкаОК</name>
-      <id>20</id>
+      <name>ФормаПодтвердитьВвод</name>
+      <id>4</id>
       <title>
         <key>ru</key>
         <value>ОК</value>
@@ -61,6 +55,16 @@
       <userVisible>
         <common>true</common>
       </userVisible>
+      <extendedTooltip>
+        <name>ФормаПодтвердитьВводРасширеннаяПодсказка</name>
+        <id>5</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
       <commandName>Form.Command.ПодтвердитьВвод</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
@@ -69,8 +73,8 @@
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
-      <name>КнопкаОтмена</name>
-      <id>21</id>
+      <name>ФормаОтменитьВвод</name>
+      <id>6</id>
       <title>
         <key>ru</key>
         <value>Отмена</value>
@@ -80,6 +84,16 @@
       <userVisible>
         <common>true</common>
       </userVisible>
+      <extendedTooltip>
+        <name>ФормаОтменитьВводРасширеннаяПодсказка</name>
+        <id>7</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
       <commandName>Form.Command.ОтменитьВвод</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
@@ -87,36 +101,25 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
   </autoCommandBar>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
-  <group>Auto</group>
+  <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
   <enabled>true</enabled>
-  <showTitle>auto</showTitle>
+  <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
-  <attributes>
-    <name>Объект</name>
-    <id>1</id>
-    <valueType>
-      <types>DataProcessorObject.МодальныеДиалоги</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <main>true</main>
-  </attributes>
   <attributes>
     <name>ВводимоеЗначение</name>
     <title>
       <key>ru</key>
-      <value>Значение</value>
+      <value>Вводимое значение</value>
     </title>
-    <id>2</id>
+    <id>1</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>
@@ -128,17 +131,13 @@
       <common>true</common>
     </edit>
   </attributes>
-  <commandInterface>
-    <navigationPanel/>
-    <commandBar/>
-  </commandInterface>
   <formCommands>
     <name>ПодтвердитьВвод</name>
     <title>
       <key>ru</key>
-      <value>ОК</value>
+      <value>Подтвердить ввод</value>
     </title>
-    <id>30</id>
+    <id>1</id>
     <use>
       <common>true</common>
     </use>
@@ -147,15 +146,15 @@
         <name>ПодтвердитьВвод</name>
       </handler>
     </action>
-    <currentRowUse>DontUse</currentRowUse>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
     <name>ОтменитьВвод</name>
     <title>
       <key>ru</key>
-      <value>Отмена</value>
+      <value>Отменить ввод</value>
     </title>
-    <id>31</id>
+    <id>2</id>
     <use>
       <common>true</common>
     </use>
@@ -164,7 +163,10 @@
         <name>ОтменитьВвод</name>
       </handler>
     </action>
-    <currentRowUse>DontUse</currentRowUse>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
 </form:Form>

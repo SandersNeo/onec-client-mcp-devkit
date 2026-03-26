@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d469f924-8720-4ff4-8459-69bfbb65dbe9">
-  <name>ClientMcp</name>
+  <name>client_mcp</name>
   <synonym>
     <key>ru</key>
     <value>Client mcp</value>
