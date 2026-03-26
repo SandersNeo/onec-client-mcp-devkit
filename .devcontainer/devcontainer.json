@@ -1,14 +1,16 @@
 {
   "name": "onec-client-mcp-devkit",
-  "image": "local.devcontainers/onec-client:8.3.27.1859",
+  "image": "local.devcontainers/onec-client-edt:8.3.27.1859",
   "initializeCommand": "sh -lc 'command -v xhost >/dev/null && xhost +SI:localuser:root || true'",
   "remoteUser": "root",
+  "containerUser": "vscode",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
   "workspaceFolder": "/workspace",
   "mounts": [
     "source=/home/alko/.codex/auth.json,target=${containerWorkspaceFolder}/.codex-mount/auth.json,type=bind",
     "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
-    "source=${localEnv:XAUTHORITY},target=/root/.Xauthority,type=bind"
+    "source=${localEnv:XAUTHORITY},target=/root/.Xauthority,type=bind",
+    "source=/home/alko/develop/tools,target=/home/vscode/tools,type=bind"
   ],
   "remoteEnv": {
     "CODEX_HOME": "${containerWorkspaceFolder}/.codex-mount",

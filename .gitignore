@@ -24,3 +24,5 @@ Thumbs.db
 .agents/tools/*
 !.agents/tools/v8-runner.yml
 .codex-mount
+
+build
