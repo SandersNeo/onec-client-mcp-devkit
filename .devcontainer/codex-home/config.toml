@@ -1,0 +1,43 @@
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
+
+sandbox_mode = "danger-full-access"
+approval_policy = "never"
+approvals_reviewer = "user"
+service_tier = "fast"
+
+[projects."/workspace"]
+trust_level = "trusted"
+
+[notice]
+hide_full_access_warning = true
+
+[notice.model_migrations]
+"gpt-5.2-codex" = "gpt-5.3-codex"
+
+[tui]
+status_line = ["model-with-reasoning", "context-remaining", "current-dir", "model-name", "five-hour-limit"]
+
+[features]
+multi_agent = true
+fast_mode = true
+
+[agents]
+max_threads = 6
+max_depth = 1
+
+[agents.explorer]
+description = "Read-only codebase explorer for gathering evidence before changes are proposed."
+config_file = "agents/explorer.toml"
+
+[agents.reviewer]
+description = "PR reviewer focused on correctness, security, and missing tests."
+config_file = "agents/reviewer.toml"
+
+[agents.docs_researcher]
+description = "Documentation specialist that uses the docs MCP server to verify APIs and framework behavior."
+config_file = "agents/docs-researcher.toml"
+
+[agents.worker]
+description = "Implementation-focused agent that applies changes as assigned by the coordinator."
+config_file = "agents/worker.toml"
