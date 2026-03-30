@@ -9,6 +9,7 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>CommonCommand.Мсп_УправлениеMCP</content>
   <content>CommonForm.Мсп_УправлениеMCP</content>
+  <content>CommonModule.Мсп_ЗадачиКлиент</content>
   <content>CommonModule.Мсп_ИнструментИнфоИБКлиент</content>
   <content>CommonModule.Мсп_Коллекции</content>
   <content>CommonModule.Мсп_ЛогированиеКлиент</content>

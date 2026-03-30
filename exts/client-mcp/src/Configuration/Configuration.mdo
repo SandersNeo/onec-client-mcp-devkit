@@ -30,6 +30,7 @@
   <subsystems>Subsystem.Мсп_Провайдеры</subsystems>
   <commonTemplates>CommonTemplate.Мсп_webTransport</commonTemplates>
   <commonModules>CommonModule.Мсп_URIКлиент</commonModules>
+  <commonModules>CommonModule.Мсп_ЗадачиКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментИнфоИБКлиент</commonModules>
   <commonModules>CommonModule.Мсп_ИнструментТестКлиент</commonModules>
   <commonModules>CommonModule.Мсп_Коллекции</commonModules>
