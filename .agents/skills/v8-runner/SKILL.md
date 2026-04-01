@@ -7,11 +7,11 @@ description: Use when the user asks to initialize the local 1C test runner throu
 
 ## Workflow
 
-1. Read `/workspace/.agents/tools/onec-client-mcp-devkit.edt.yaml` when the task depends on local runner initialization.
+1. Read `.agents/tools/onec-client-mcp-devkit.edt.yaml` when the task depends on local runner initialization.
 2. Initialize the environment through CLI with:
-   `/home/vscode/tools/v8-test-runner --config /workspace/.agents/tools/onec-client-mcp-devkit.edt.yaml init`
+   `/home/vscode/tools/v8-test-runner --config .agents/tools/onec-client-mcp-devkit.edt.yaml init`
 3. After successful CLI initialization, prefer the `mcp__v8_runner__*` tools for build, syntax checks, test runs, config dump, and app launch.
-4. Use `/workspace/.agents/tools/v8-runner.yml` as the project runner definition when the task depends on source-set or tool configuration.
+4. Use `.agents/tools/v8-runner.yml` as the project runner definition when the task depends on source-set or tool configuration.
 5. If a runner command or MCP tool fails, report the exact error and separate initialization problems from test or build failures.
 
 ## Rules

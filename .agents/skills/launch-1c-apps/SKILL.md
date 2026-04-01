@@ -18,7 +18,7 @@ description: Launch 1C applications in the local development environment. Use wh
 - Use only aliases listed in `references/aliases.md`.
 - Prefer the canonical alias first when it is available.
 - Do not invent variants from memory.
-- If the user asks for a test client, do not use this skill for launch. Use project-specific docs such as `/workspace/docs/mcp-test-client/tasks/01-client-control.md`.
+- If the user asks for a test client, do not use this skill for launch. Use project-specific docs such as `docs/mcp-test-client/tasks/01-client-control.md`.
 
 ## Reference
 

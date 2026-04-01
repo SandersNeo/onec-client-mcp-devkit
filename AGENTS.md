@@ -20,7 +20,6 @@ Each task must pass through the following stages, in order:
 - Large tasks must be done in their own branch: `feat/<issue-i>-<short-description>`.
 - Work on an existing task can continue in the same branch (even in a new chat). Small microtasks should stay on the current branch.
 - If unsure whether a task is “large,” ask first.
-- Commit at the end of the task using Conventional Commits (e.g., `feat: ...`, `fix: ...`, `chore: ...`).
 
 ## Roles
 - Coordinator (default agent): owns the workflow, ensures every stage is completed and documented.
