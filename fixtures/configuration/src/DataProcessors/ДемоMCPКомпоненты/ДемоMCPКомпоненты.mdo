@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="931837e1-73c5-49d9-9b29-549e4023dc3b">
+  <producedTypes>
+    <objectType typeId="3acd23e0-9840-443c-aba6-84f6a32c1b3b" valueTypeId="19729905-492f-4f06-9389-d9df7218f1c2"/>
+    <managerType typeId="13cfd95b-a7f1-4e3e-9f05-5eb70b256a80" valueTypeId="d30c62e5-df73-4f08-aea5-869ef830ac51"/>
+  </producedTypes>
+  <name>ДемоMCPКомпоненты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Демо MCP компоненты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ДемоMCPКомпоненты.Form.Форма</defaultForm>
+  <forms uuid="74f4d856-c097-40f2-bfbc-dd3c6dbfbc73">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
