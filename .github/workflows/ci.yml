@@ -57,6 +57,22 @@ jobs:
           ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
         timeout-minutes: 30
 
+      - name: Prepare EDT CLI
+        run: |
+          set -euo pipefail
+          edt_cli="$(command -v 1cedtcli.sh || true)"
+          if [ -z "$edt_cli" ]; then
+            edt_cli="$(find /opt/1C -type f -name 1cedtcli.sh -print -quit)"
+          fi
+          if [ -z "$edt_cli" ]; then
+            echo "1cedtcli.sh not found" >&2
+            find /opt/1C -type f -name '1cedtcli*' -print >&2 || true
+            exit 1
+          fi
+          mkdir -p "$RUNNER_TEMP/edt-cli"
+          ln -sf "$edt_cli" "$RUNNER_TEMP/edt-cli/1cedtcli.sh"
+          echo "$RUNNER_TEMP/edt-cli" >> "$GITHUB_PATH"
+
       - name: Export configuration sources
         uses: alkoleft/onec-edtcli-command-action@eece36333c2c0bbcf8248af508346e545d8178f2
         with:
