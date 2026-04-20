@@ -311,7 +311,7 @@ jobs:
           echo "Checking ibsrv port..."
           netstat -tlnp | grep 8314 || echo "port 8314 is not listening"
 
-          xvfb-run -a -s "-screen 0 1024x768x24" 1cv8c /WS "http://localhost:8314" /C"RunUnitTests=yaxunit-config.json" /L ru /VL ru_RU /DisableStartupDialogs /DisableStartupMessages /DisableUnrecoverableErrorMessage /Out output.log
+          xvfb-run -a -s "-screen 0 1024x768x24" 1cv8c /TESTMANAGER /WS "http://localhost:8314" /C"RunUnitTests=yaxunit-config.json" /L ru /VL ru_RU /DisableStartupDialogs /DisableStartupMessages /DisableUnrecoverableErrorMessage /Out output.log
         env:
           DISPLAY: ":99"
           LANG: ru_RU.UTF-8
