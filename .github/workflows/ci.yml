@@ -62,10 +62,13 @@ jobs:
           set -euo pipefail
           edt_cli="$(command -v 1cedtcli.sh || true)"
           if [ -z "$edt_cli" ]; then
-            edt_cli="$(find /opt/1C -type f -name 1cedtcli.sh -print -quit)"
+            edt_cli="$(command -v 1cedtcli || true)"
           fi
           if [ -z "$edt_cli" ]; then
-            echo "1cedtcli.sh not found" >&2
+            edt_cli="$(find /opt/1C -type f \( -name 1cedtcli.sh -o -name 1cedtcli \) -print -quit)"
+          fi
+          if [ -z "$edt_cli" ]; then
+            echo "EDT CLI not found" >&2
             find /opt/1C -type f -name '1cedtcli*' -print >&2 || true
             exit 1
           fi
