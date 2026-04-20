@@ -76,6 +76,9 @@ jobs:
           ln -sf "$edt_cli" "$RUNNER_TEMP/edt-cli/1cedtcli.sh"
           echo "$RUNNER_TEMP/edt-cli" >> "$GITHUB_PATH"
 
+      - name: Prepare export directories
+        run: mkdir -p export/configuration export/client_mcp export/test_client export/tests
+
       - name: Export configuration sources
         uses: alkoleft/onec-edtcli-command-action@eece36333c2c0bbcf8248af508346e545d8178f2
         with:
@@ -111,6 +114,16 @@ jobs:
           to: export/tests
           timeout: 15
         timeout-minutes: 15
+
+      - name: Check Designer sources
+        run: |
+          set -euo pipefail
+          for export_path in export/configuration export/client_mcp export/test_client export/tests; do
+            if ! find "$export_path" -type f -print -quit | grep -q .; then
+              echo "$export_path is empty" >&2
+              exit 1
+            fi
+          done
 
       - name: Pack Designer sources
         run: |
