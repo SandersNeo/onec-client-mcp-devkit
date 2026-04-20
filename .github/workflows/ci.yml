@@ -1,0 +1,137 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - ".github/workflows/**"
+      - "v8project.yaml"
+      - "exts/**"
+      - "fixtures/**"
+      - "tests/**"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - ".github/workflows/**"
+      - "v8project.yaml"
+      - "exts/**"
+      - "fixtures/**"
+      - "tests/**"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  V8_VERSION: 8.3.27.1859
+  EDT_VERSION: 2025.2.3
+  V8_RUNNER_REV: 30aa04aa5fea101e05162ef6963c6756f86ba852
+  LANG: ru_RU.UTF-8
+
+jobs:
+  yaxunit:
+    name: YaXUnit
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Prepare Linux runtime
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            locales \
+            xvfb \
+            x11-utils \
+            net-tools \
+            libenchant-2-2 \
+            libgstreamer-plugins-base1.0-0 \
+            gstreamer1.0-plugins-good \
+            gstreamer1.0-plugins-bad \
+            gstreamer1.0-plugins-ugly
+          sudo ln -sf /usr/lib/x86_64-linux-gnu/libenchant-2.so.2 /usr/lib/libenchant.so.1
+          sudo localedef -i ru_RU -c -f UTF-8 -A /usr/share/locale/locale.alias ru_RU.UTF-8
+          mkdir -p ~/.1cv8/1C/1cv8/conf/
+          echo "DisableUnsafeActionProtection=.*" >> ~/.1cv8/1C/1cv8/conf/conf.cfg
+          sudo ldconfig
+
+      - name: Install 1C:Enterprise
+        uses: 1CDevFlow/onec-setup-action@e1cd5937cb951c3cdeda4bf482f89da5f5e0b148
+        with:
+          type: onec
+          onec_version: ${{ env.V8_VERSION }}
+          cache: true
+        env:
+          ONEC_USERNAME: ${{ secrets.ONEC_USERNAME }}
+          ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
+        timeout-minutes: 15
+
+      - name: Install 1C:EDT
+        uses: 1CDevFlow/onec-setup-action@e1cd5937cb951c3cdeda4bf482f89da5f5e0b148
+        with:
+          type: edt
+          edt_version: ${{ env.EDT_VERSION }}
+          cache: true
+        env:
+          ONEC_USERNAME: ${{ secrets.ONEC_USERNAME }}
+          ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
+        timeout-minutes: 30
+
+      - name: Prepare EDT CLI alias
+        run: |
+          set -euo pipefail
+          edt_cli="$(command -v 1cedtcli || command -v 1cedtcli.sh)"
+          if [ "$(basename "$edt_cli")" = "1cedtcli.sh" ]; then
+            mkdir -p "$RUNNER_TEMP/edt-cli"
+            ln -sf "$edt_cli" "$RUNNER_TEMP/edt-cli/1cedtcli"
+            echo "$RUNNER_TEMP/edt-cli" >> "$GITHUB_PATH"
+          fi
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8
+
+      - name: Cache cargo build
+        uses: Swatinem/rust-cache@aa7c1c80a07a27a84c0aa76d0cef0aad3830e330
+        with:
+          key: v8-runner-${{ env.V8_RUNNER_REV }}
+
+      - name: Install v8-runner
+        run: cargo install --git https://github.com/alkoleft/v8-runner-rust --rev "$V8_RUNNER_REV" --locked
+
+      - name: Initialize infobase and EDT workspace
+        run: xvfb-run -a v8-runner --output json init
+        timeout-minutes: 20
+
+      - name: Validate EDT sources
+        run: v8-runner --output json syntax edt
+        timeout-minutes: 15
+
+      - name: Run YaXUnit tests
+        run: xvfb-run -a v8-runner --output json test yaxunit all
+        timeout-minutes: 30
+
+      - name: Upload v8-runner artifacts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: v8-runner-artifacts
+          path: |
+            build/logs/**/*.log
+            build/temp/**/*.log
+            build/temp/**/report.xml
+            build/temp/**/config.json
+            build/temp/**/enterprise.out.log
+          if-no-files-found: ignore
+          retention-days: 7

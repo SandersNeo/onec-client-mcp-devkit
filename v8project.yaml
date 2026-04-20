@@ -20,6 +20,12 @@ source-set:
 build:
   partialLoadThreshold: 20
 tools:
+  platform:
+    version: 8.3.27.1859
+  edt-cli:
+    version: 2025.2.3
   enterprise:
     additional-launch-keys:
       - /TESTMANAGER
+tests:
+  execution_timeout_seconds: 600
