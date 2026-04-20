@@ -79,40 +79,16 @@ jobs:
       - name: Prepare export directories
         run: mkdir -p export/configuration export/client_mcp export/test_client export/tests
 
-      - name: Export configuration sources
-        uses: alkoleft/onec-edtcli-command-action@eece36333c2c0bbcf8248af508346e545d8178f2
-        with:
-          export: true
-          from: fixtures/configuration
-          to: export/configuration
-          timeout: 15
-        timeout-minutes: 15
+      - name: Export EDT sources
+        run: |
+          set -euo pipefail
+          edt_cli="$(command -v 1cedtcli.sh)"
+          workspace="$RUNNER_TEMP/ws"
 
-      - name: Export client_mcp sources
-        uses: alkoleft/onec-edtcli-command-action@eece36333c2c0bbcf8248af508346e545d8178f2
-        with:
-          export: true
-          from: exts/client-mcp
-          to: export/client_mcp
-          timeout: 15
-        timeout-minutes: 15
-
-      - name: Export test_client sources
-        uses: alkoleft/onec-edtcli-command-action@eece36333c2c0bbcf8248af508346e545d8178f2
-        with:
-          export: true
-          from: exts/test_client
-          to: export/test_client
-          timeout: 15
-        timeout-minutes: 15
-
-      - name: Export tests sources
-        uses: alkoleft/onec-edtcli-command-action@eece36333c2c0bbcf8248af508346e545d8178f2
-        with:
-          export: true
-          from: tests
-          to: export/tests
-          timeout: 15
+          "$edt_cli" -data "$workspace" -timeout 900 -command export --configuration-files "$PWD/export/configuration" --project "$PWD/fixtures/configuration"
+          "$edt_cli" -data "$workspace" -timeout 900 -command export --configuration-files "$PWD/export/client_mcp" --project "$PWD/exts/client-mcp"
+          "$edt_cli" -data "$workspace" -timeout 900 -command export --configuration-files "$PWD/export/test_client" --project "$PWD/exts/test_client"
+          "$edt_cli" -data "$workspace" -timeout 900 -command export --configuration-files "$PWD/export/tests" --project "$PWD/tests"
         timeout-minutes: 15
 
       - name: Check Designer sources
