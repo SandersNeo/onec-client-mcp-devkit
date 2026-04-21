@@ -272,20 +272,20 @@ jobs:
       - name: Load client_mcp extension
         run: |
           ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config load --extension=client_mcp --force binary/client_mcp.cfe
-          ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config apply --extension=client_mcp --force
           ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config extension update --name=client_mcp --safe-mode=no --unsafe-action-protection=no
+          ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config apply --extension=client_mcp --force
 
       - name: Load test_client extension
         run: |
           ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config load --extension=test_client --force binary/test_client.cfe
-          ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config apply --extension=test_client --force
           ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config extension update --name=test_client --safe-mode=no --unsafe-action-protection=no
+          ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config apply --extension=test_client --force
 
       - name: Load tests extension
         run: |
           ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config load --extension=tests --force binary/tests.cfe
-          ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config apply --extension=tests --force
           ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config extension update --name=tests --safe-mode=no --unsafe-action-protection=no
+          ibcmd infobase --data="$GITHUB_WORKSPACE/server-data" --db-path=file-db config apply --extension=tests --force
 
       - name: Create YaXUnit config
         run: |
